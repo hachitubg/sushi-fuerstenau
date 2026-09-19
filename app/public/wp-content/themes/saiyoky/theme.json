@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "background", "name": "Background", "color": "#0e0e0e" },
+        { "slug": "surface", "name": "Surface", "color": "#1b1b1b" },
+        { "slug": "foreground", "name": "Foreground", "color": "#f5f3f2" },
+        { "slug": "primary", "name": "Saiyoky Red", "color": "#e30613" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "%", "vw", "vh"]
+    },
+    "typography": {
+      "fluid": true
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#0e0e0e",
+      "text": "#f5f3f2"
+    }
+  }
+}

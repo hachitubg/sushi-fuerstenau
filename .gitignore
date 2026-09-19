@@ -16,6 +16,8 @@ app/public/wp-content/ai1wm-backups/
 
 # Temporary packages and local cleanup artifacts
 .clean-*/
+.deploy-tools/
+.hosting-backup-*/
 *.zip
 *.tar
 *.tar.gz

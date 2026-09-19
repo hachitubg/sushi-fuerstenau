@@ -1,0 +1,18 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# Protect configuration and hidden files on Apache/LiteSpeed.
+<FilesMatch "^(wp-config\.php|\.htaccess|\.user\.ini|php\.ini|error_log)$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes

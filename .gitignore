@@ -19,6 +19,7 @@ app/public/wp-content/ai1wm-backups/
 .deploy-tools/
 .deploy-staging/
 .hosting-backup-*/
+.hosting-postclean-*/
 *.zip
 *.tar
 *.tar.gz
